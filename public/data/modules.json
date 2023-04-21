@@ -1,0 +1,14 @@
+{
+  "modules": [
+    {
+      "slug": "blog",
+      "displayName": "Blog",
+      "description": "Displays informal diary-style entries",
+      "moduleParts": [
+        {
+          "slug": "blog-base"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "moduleParts": [
+    {
+      "slug": "home-base",
+      "description": "Home page base sections",
+      "page": {
+        "slug": "home"
+      },
+      "sections": [
+        {
+          "slug": "blog-teaser",
+          "position": 5
+        }
+      ]
+    },
+    {
+      "slug": "blog-base",
+      "description": "Blog page base sections",
+      "page": {
+        "slug": "blog"
+      },
+      "sections": [
+        {
+          "slug": "blog-seo",
+          "position": 0
+        },
+        {
+          "slug": "blog-landing",
+          "position": 1
+        },
+        {
+          "slug": "blog-item-list",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "slug": "blog-article",
+      "description": "Blog detail page sections",
+      "page": {
+        "slug": "blog-article"
+      },
+      "sections": [
+        {
+          "slug": "blog-article",
+          "position": 2
+        },
+        {
+          "slug": "blog-related-articles",
+          "position": 3
+        }
+      ]
+    }
+  ]
+}

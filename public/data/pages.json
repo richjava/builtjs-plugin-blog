@@ -1,0 +1,49 @@
+{
+  "pages": [
+    {
+      "slug": "home",
+      "singularName": "home",
+      "pluralName": "home",
+      "displayName": "Home",
+      "demoSections": [
+        {
+          "slug": "blog-teaser"
+        }
+      ]
+    },
+    {
+      "slug": "blog",
+      "singularName": "blog",
+      "pluralName": "blogs",
+      "displayName": "Blog",
+      "demoSections": [
+        {
+          "slug": "blog-seo"
+        },
+        {
+          "slug": "blog-landing"
+        },
+        {
+          "slug": "blog-item-list"
+        }
+      ]
+    },
+    {
+      "slug": "blog-article",
+      "singularName": "blog-article",
+      "pluralName": "blog-articles",
+      "displayName": "Blog Article",
+      "contentType": {
+        "slug": "blog-item"
+      },
+      "demoSections": [
+        {
+          "slug": "blog-article"
+        },
+        {
+          "slug": "blog-related-articles"
+        }
+      ]
+    }
+  ]
+}

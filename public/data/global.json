@@ -1,0 +1,17 @@
+{
+  "global": {
+    "name": "Blog",
+    "logo": {
+      "data": {
+        "attributes": {
+          "name": "builtjs",
+          "path": "/images/theme",
+          "ext": "svg",
+          "url": "/images/theme/builtjs.svg",
+          "width": 45,
+          "height": 45
+        }
+      }
+    }
+  }
+}

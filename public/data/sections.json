@@ -1,0 +1,172 @@
+{
+  "sections": [
+    {
+      "slug": "header",
+      "category": "layout",
+      "type": "layout",
+      "displayName": "Header",
+      "description": "The header contains the company logo, main site navigation and often a call-to-action button.",
+      "templates": ["header-1"],
+      "defaultTemplate": {
+        "slug": "header-1"
+      },
+      "position": "start",
+      "collections": {
+        "primary-menu-items": {}
+      }
+    },
+    {
+      "slug": "footer",
+      "category": "layout",
+      "type": "layout",
+      "displayName": "Footer",
+      "description": "The footer contains secondary site navigation.",
+      "templates": ["footer-1"],
+      "defaultTemplate": {
+        "slug": "footer-1"
+      },
+      "position": "end"
+    },
+    {
+      "slug": "blog-seo",
+      "displayName": "Blog SEO",
+      "templates": ["seo"],
+      "defaultTemplate": {
+        "slug": "seo"
+      },
+      "category": "head",
+      "type": "head",
+      "attributes": {
+        "title": "Blog | Corporate Tailwind Built.JS Theme",
+        "description": "Blog page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "shareImage": {
+          "data": {
+            "attributes": {
+              "name": "image",
+              "path": "/images/theme",
+              "ext": "png",
+              "url": "/images/theme/image.png",
+              "width": 1280,
+              "height": 768
+            }
+          }
+        },
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      }
+    },
+    {
+      "slug": "blog-teaser",
+      "displayName": "Blog Teaser",
+      "description": "A set of blog items on the Home page.",
+      "templates": ["list-2"],
+      "defaultTemplate": {
+        "slug": "list-2"
+      },
+      "attributes": {
+        "columns": 3
+      },
+      "collections": {
+        "blog-items": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "limit": 3,
+            "populate": ["author", "tags"]
+          },
+          "article": {
+            "slug": "blog-article"
+          }
+        }
+      }
+    },
+    {
+      "slug": "blog-landing",
+      "displayName": "Blog Landing",
+      "description": "The blog page landing area. This area contains the latest published blog post.",
+      "templates": ["list-1"],
+      "defaultTemplate": {
+        "slug": "list-1"
+      },
+      "collections": {
+        "blog-items": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "limit": 1,
+            "populate": ["author", "tags"]
+          },
+          "article": {
+            "slug": "blog-article"
+          }
+        }
+      }
+    },
+    {
+      "slug": "blog-item-list",
+      "displayName": "Blog Item List",
+      "description": "A list of all published blog posts excluding the latest published blog post.",
+      "templates": ["list-2"],
+      "defaultTemplate": {
+        "slug": "list-2"
+      },
+      "collections": {
+        "blog-items": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "offset": 1,
+            "populate": ["author", "tags"]
+          },
+          "article": {
+            "slug": "blog-article"
+          }
+        }
+      }
+    },
+    {
+      "slug": "blog-article",
+      "displayName": "Blog Article",
+      "description": "The blog post detail page.",
+      "templates": ["article-1"],
+      "defaultTemplate": {
+        "slug": "article-1"
+      },
+      "item": {
+        "slug": "blog-item",
+        "config": {
+          "populate": ["author", "tags"]
+        }
+      }
+    },
+    {
+      "slug": "blog-related-articles",
+      "displayName": "Blog Related Articles",
+      "description": "A list of related articles to and excluding the currently viewed article.",
+      "templates": ["list-2"],
+      "defaultTemplate": {
+        "slug": "list-2"
+      },
+      "attributes": {
+        "columns": 3
+      },
+      "collections": {
+        "blog-items": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "limit": 3,
+            "populate": ["author", "tags"]
+          },
+          "article": {
+            "slug": "blog-article"
+          }
+        }
+      }
+    }
+  ]
+}

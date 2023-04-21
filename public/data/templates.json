@@ -1,0 +1,66 @@
+{
+  "templates": [
+    {
+      "slug": "header-1",
+      "displayName": "Header 1",
+      "category": "headers",
+      "isDemo": true,
+      "description": "Simple header with justified logo and nav links.",
+      "repoUrl": "https://github.com/builtjs/builtjs-plugin-blog/blob/main/components/templates/headers/header-1/header-1.js",
+      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/headers#header-1"
+    },
+    {
+      "slug": "footer-1",
+      "displayName": "Footer 1",
+      "category": "footers",
+      "isDemo": true,
+      "description": "Simple footer with centered content and social links.",
+      "repoUrl": "https://github.com/builtjs/builtjs-plugin-blog/blob/main/components/templates/footers/footer-1/footer-1.js",
+      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/footers#footer-1"
+    },
+    {
+      "slug": "seo",
+      "type": "head",
+      "displayName": "SEO",
+      "category": "head",
+      "description": "Define SEO meta titles, meta descriptions and social media meta data.",
+      "repoUrl": "https://github.com/builtjs/builtjs-plugin-blog/blob/main/components/templates/head/seo/seo.js"
+    },
+    {
+      "slug": "list-1",
+      "displayName": "List 1",
+      "category": "lists",
+      "description": "List item with two offset columns and split content.",
+      "images": {
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-plugin-blog/public/images/theme/templates/lists/list-1/list-1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-plugin-blog/public/images/theme/templates/lists/list-1/list-1.png"
+      },
+      "repoUrl": "https://github.com/builtjs/builtjs-plugin-blog/blob/main/components/templates/lists/list-1/list-1.js",
+      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/lists#list-1"
+    },
+    {
+      "slug": "list-2",
+      "displayName": "List 2",
+      "category": "lists",
+      "description": "List of items with three equal columns, left aligned content and an image.",
+      "images": {
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-plugin-blog/public/images/theme/templates/lists/list-2/list-2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-plugin-blog/public/images/theme/templates/lists/list-2/list-2.png"
+      },
+      "repoUrl": "https://github.com/builtjs/builtjs-plugin-blog/blob/main/components/templates/lists/list-2/list-2.js",
+      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/templates/lists#list-2"
+    },
+    {
+      "slug": "article-1",
+      "displayName": "Article 1",
+      "category": "articles",
+      "description": "Article section with hero image.",
+      "images": {
+        "thumb": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-plugin-blog/public/images/theme/templates/articles/article-1/article-1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/builtjs/builtjs-plugin-blog/public/images/theme/templates/articles/article-1/article-1.png"
+      },
+      "repoUrl": "https://github.com/builtjs/builtjs-plugin-blog/blob/main/components/templates/articles/article-1/article-1.js",
+      "demoUrl": "https://builtjs-theme-corporate-tailwind.vercel.app/blog-items/lorem-ipsum-dolor-sit-ameta#article-1"
+    }
+  ]
+}

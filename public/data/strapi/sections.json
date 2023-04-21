@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "blog-seo": {
+      "slug": "blog-seo",
+      "category": "seo",
+      "settings": {
+        "collectionName": "components_seo_blog_seo",
+        "info": {
+          "displayName": "Blog Page SEO",
+          "icon": "robot"
+        },
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "shareImage": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "twitterCardType": {
+            "type": "string"
+          },
+          "twitterUsername": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "blog-landing": {
+      "slug": "blog-landing",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_blog_landing",
+        "info": {
+          "displayName": "Blog Landing",
+          "icon": "robot"
+        },
+        "attributes": {}
+      }
+    },
+    "blog-item-list": {
+      "slug": "blog-item-list",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_blog_item_list",
+        "info": {
+          "displayName": "Blog Item List",
+          "icon": "robot"
+        },
+        "attributes": {}
+      }
+    },
+    "blog-list": {
+      "slug": "blog-list",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_blog_list",
+        "info": {
+          "displayName": "Blog List",
+          "icon": "robot"
+        },
+        "attributes": {}
+      }
+    },
+    "blog-article": {
+      "slug": "blog-article",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_blog_article",
+        "info": {
+          "displayName": "Blog Article",
+          "icon": "robot"
+        },
+        "attributes": {}
+      }
+    },
+    "blog-related-articles": {
+      "slug": "blog-related-articles",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_blog_related_articles",
+        "info": {
+          "displayName": "Blog Related Articles",
+          "icon": "robot"
+        },
+        "attributes": {}
+      }
+    }
+  }
+}

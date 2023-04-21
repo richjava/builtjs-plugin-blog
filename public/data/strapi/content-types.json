@@ -1,0 +1,175 @@
+{
+  "contentTypes": [
+    {
+      "singularDisplayName": "Blog Item",
+      "pluralDisplayName": "Blog Items",
+      "slug": "blog-item",
+      "modelSettings": {
+        "kind": "collectionType",
+        "collectionName": "blog_items",
+        "info": {
+          "displayName": "Blog Items",
+          "singularName": "blog-item",
+          "pluralName": "blog-items",
+          "description": ""
+        },
+        "options": {
+          "increments": true,
+          "timestamps": true,
+          "draftAndPublish": true
+        },
+        "attributes": {
+          "title": {
+            "type": "string",
+            "required": true
+          },
+          "slug": {
+            "type": "uid",
+            "targetField": "title",
+            "required": true
+          },
+          "content": {
+            "type": "richtext"
+          },
+          "blurb": {
+            "type": "text"
+          },
+          "category": {
+            "type": "text"
+          },
+          "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images"
+            ]
+          },
+          "date": {
+            "type": "date",
+            "required": true
+          },
+          "author": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::author.author",
+            "inversedBy": "blogItems"
+          },
+          "tags": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::tag.tag"
+          }
+        }
+      }
+    },
+    {
+      "singularDisplayName": "Author",
+      "pluralDisplayName": "Authors",
+      "slug": "author",
+      "modelSettings": {
+        "kind": "collectionType",
+        "collectionName": "authors",
+        "info": {
+          "singularName": "author",
+          "pluralName": "authors",
+          "displayName": "Authors",
+          "description": "Writer of posts"
+        },
+        "options": {
+          "increments": true,
+          "timestamps": true
+        },
+        "attributes": {
+          "fullName": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid",
+            "targetField": "fullName",
+            "required": true
+          },
+          "bio": {
+            "type": "richtext"
+          },
+          "position": {
+            "type": "string",
+            "required": false
+          },
+          "profileImage": {
+            "allowedTypes": ["images"],
+            "type": "media",
+            "multiple": false,
+            "required": false
+          },
+          "blogItems": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::blog-item.blog-item",
+            "mappedBy": "author"
+          }
+        }
+      }
+    },
+    {
+      "singularDisplayName": "Tag",
+      "pluralDisplayName": "Tags",
+      "slug": "tags",
+      "modelSettings": {
+        "kind": "collectionType",
+        "collectionName": "tags",
+        "info": {
+          "singularName": "tag",
+          "pluralName": "tags",
+          "displayName": "Tags",
+          "description": "Tag of posts"
+        },
+        "options": {
+          "increments": true,
+          "timestamps": true
+        },
+        "attributes": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid",
+            "targetField": "name",
+            "required": true
+          }
+        }
+      }
+    },
+    {
+      "singularDisplayName": "Primary Menu Item",
+      "pluralDisplayName": "Primary Menu Items",
+      "slug": "primary-menu-item",
+      "modelSettings": {
+        "kind": "collectionType",
+        "collectionName": "primary_menu_items",
+        "info": {
+          "singularName": "primary-menu-item",
+          "pluralName": "primary-menu-items",
+          "displayName": "Primary Menu Items",
+          "description": "Menu item for the primary menu"
+        },
+        "options": {
+          "increments": true,
+          "timestamps": true,
+          "draftAndPublish": true
+        },
+        "attributes": {
+          "label": {
+            "type": "string",
+            "required": true
+          },
+          "url": {
+            "type": "string",
+            "unique": true,
+            "required": true
+          }
+        }
+      }
+    }
+  ]
+}

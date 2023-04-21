@@ -1,0 +1,19 @@
+{
+  "layout": {
+    "contentIndex": 1,
+    "sections": [
+      {
+        "slug": "header",
+        "template": {
+          "slug": "header-1"
+        }
+      },
+      {
+        "slug": "footer",
+        "template": {
+          "slug": "footer-1"
+        }
+      }
+    ]
+  }
+}

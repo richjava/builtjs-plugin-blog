@@ -7,7 +7,7 @@
     "description": "Blog plugin with basic Tailwind styling.",
     "imageUrl": "",
     "language": "typescript",
-    "repoName": "builtjs/builtjs-plugin-blog",
+    "repoName": "richjava/builtjs-plugin-blog",
     "gitProvider": "github",
     "repoUrl": "",
     "demoUrl": "",

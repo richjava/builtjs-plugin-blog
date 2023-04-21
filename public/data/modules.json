@@ -7,6 +7,9 @@
       "moduleParts": [
         {
           "slug": "blog-base"
+        },
+        {
+          "slug": "home-blog-teaser"
         }
       ]
     }

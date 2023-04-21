@@ -1,5 +1,17 @@
 {
   "sections": {
+    "home-blog-teaser": {
+      "slug": "blog-teaser",
+      "category": "sections",
+      "settings": {
+        "collectionName": "components_sections_blog_teaser",
+        "info": {
+          "displayName": "Blog Teaser",
+          "icon": "robot"
+        },
+        "attributes": {}
+      }
+    },
     "blog-seo": {
       "slug": "blog-seo",
       "category": "seo",

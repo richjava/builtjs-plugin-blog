@@ -1,8 +1,8 @@
 {
   "moduleParts": [
     {
-      "slug": "home-base",
-      "description": "Home page base sections",
+      "slug": "home-blog-teaser",
+      "description": "Teaser for Blog page on Home page",
       "page": {
         "slug": "home"
       },

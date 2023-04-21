@@ -1,6 +1,6 @@
 {
   "sections": {
-    "home-blog-teaser": {
+    "blog-teaser": {
       "slug": "blog-teaser",
       "category": "sections",
       "settings": {

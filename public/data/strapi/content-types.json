@@ -67,6 +67,7 @@
       "singularDisplayName": "Author",
       "pluralDisplayName": "Authors",
       "slug": "author",
+      "dataPosition": 1,
       "modelSettings": {
         "kind": "collectionType",
         "collectionName": "authors",
@@ -115,6 +116,7 @@
       "singularDisplayName": "Tag",
       "pluralDisplayName": "Tags",
       "slug": "tags",
+      "dataPosition": 1,
       "modelSettings": {
         "kind": "collectionType",
         "collectionName": "tags",

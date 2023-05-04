@@ -53,9 +53,11 @@ export default function List4({ content }: any) {
                 </div>
               )}
               <div className="flex items-center mb-4">
-                <p className="mb-0 text-sm capitalize preheading">
-                  {format(new Date(heroPost.attributes.date), "dd LLLL yyyy")}
-                </p>
+                {heroPost.attributes.date && (
+                  <p className="mb-0 text-sm capitalize preheading">
+                    {format(new Date(heroPost.attributes.date), "dd LLLL yyyy")}
+                  </p>
+                )}
                 <span className="mx-3 text-gray-400">|</span>
                 {/* TODO: Implement Category functionality */}
                 {heroPost.attributes.category && (

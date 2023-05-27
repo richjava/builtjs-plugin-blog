@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": 1,
+      "id": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
       "attributes": {
         "slug": "barry-foo",
         "fullName": "Barry Foo",
@@ -23,7 +23,7 @@
       "status": "published"
     },
     {
-      "id": 2,
+      "id": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
       "attributes": {
         "slug": "jane-doe",
         "fullName": "Jane Doe",

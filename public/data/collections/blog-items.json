@@ -21,8 +21,8 @@
           }
         },
         "date": "2023-06-03",
-        "author": 1,
-        "tags": [1],
+        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+        "tags": ["tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70"],
         "status": "published"
       }
     },
@@ -47,8 +47,11 @@
           }
         },
         "date": "2023-06-03",
-        "author": 2,
-        "tags": [1,2],
+        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
+        "tags": [
+          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70",
+          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"
+        ],
         "status": "published"
       }
     },
@@ -73,8 +76,8 @@
           }
         },
         "date": "2023-06-03",
-        "author": 1,
-        "tags": [2],
+        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+        "tags": ["tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"],
         "status": "published"
       }
     }

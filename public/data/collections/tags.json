@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "id": 1,
+      "id": "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70",
       "attributes": {
         "slug": "tag-1",
         "name": "Tag 1"
@@ -9,7 +9,7 @@
       "status": "published"
     },
     {
-      "id": 2,
+      "id": "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71",
       "attributes": {
         "slug": "tag-2",
         "name": "Tag 2"

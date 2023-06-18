@@ -19,6 +19,11 @@
           "default": "Corporate Tailwind",
           "type": "string"
         },
+        "slug": {
+          "type": "uid",
+          "targetField": "name",
+          "required": true
+        },
         "logo": {
           "allowedTypes": [
             "images"

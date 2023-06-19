@@ -37,7 +37,7 @@
       "category": "head",
       "type": "head",
       "attributes": {
-        "title": "Blog | Corporate Tailwind Built.JS Theme",
+        "pageTitle": "Blog | Corporate Tailwind Built.JS Theme",
         "description": "Blog page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
           "data": {

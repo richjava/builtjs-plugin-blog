@@ -19,13 +19,13 @@
           "draftAndPublish": true
         },
         "attributes": {
-          "title": {
+          "heading": {
             "type": "string",
             "required": true
           },
           "slug": {
             "type": "uid",
-            "targetField": "title",
+            "targetField": "heading",
             "required": true
           },
           "content": {

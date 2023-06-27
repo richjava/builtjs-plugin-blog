@@ -1,85 +1,67 @@
 {
   "data": [
     {
-      "attributes": {
-        "slug": "lorem-ipsum-dolor",
-        "title": "Lorem ipsum dolor",
-        "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
-        "content": "Content...",
-        "blurb": "Ac tincidunt ex feugiat vel imperdiet urna facilisis a nullam ac magna quis nunc.",
-        "category": "Category",
-        "image": {
-          "data": {
-            "attributes": {
-              "name": "image",
-              "path": "/images/theme",
-              "ext": "png",
-              "url": "/images/theme/image.png",
-              "width": 1280,
-              "height": 768
-            }
-          }
-        },
-        "date": "2023-06-03",
-        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
-        "tags": ["tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70"],
-        "status": "published"
-      }
+      "slug": "lorem-ipsum-dolor",
+      "heading": "Lorem ipsum dolor",
+      "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+      "content": "# Heading 1\n# Heading 2\nParagraph",
+      "blurb": "Ac tincidunt ex feugiat vel imperdiet urna facilisis a nullam ac magna quis nunc.",
+      "category": "Category",
+      "image": {
+        "name": "image",
+        "path": "/images/theme",
+        "ext": "png",
+        "url": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "date": "2023-06-03",
+      "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+      "tags": ["tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70"],
+      "status": "published"
     },
     {
-      "attributes": {
-        "slug": "lorem-ipsum-dolor-sit",
-        "title": "Lorem ipsum dolor sit",
-        "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
-        "content": "Content...",
-        "blurb": "Nunc volutpat ex libero nullam ac magna quis nunc tempor maximus eget at ligula.",
-        "category": "Category",
-        "image": {
-          "data": {
-            "attributes": {
-              "name": "image",
-              "path": "/images/theme",
-              "ext": "png",
-              "url": "/images/theme/image.png",
-              "width": 1280,
-              "height": 768
-            }
-          }
-        },
-        "date": "2023-06-03",
-        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
-        "tags": [
-          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70",
-          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"
-        ],
-        "status": "published"
-      }
+      "slug": "lorem-ipsum-dolor-sit",
+      "heading": "Lorem ipsum dolor sit",
+      "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+      "content": "# Heading 1\n# Heading 2\nParagraph",
+      "blurb": "Nunc volutpat ex libero nullam ac magna quis nunc tempor maximus eget at ligula.",
+      "category": "Category",
+      "image": {
+        "name": "image",
+        "path": "/images/theme",
+        "ext": "png",
+        "url": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "date": "2023-06-03",
+      "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
+      "tags": [
+        "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70",
+        "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"
+      ],
+      "status": "published"
     },
     {
-      "attributes": {
-        "slug": "lorem-ipsum-dolor-sit-amet",
-        "title": "Lorem ipsum dolor sit amet",
-        "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
-        "content": "Content...",
-        "blurb": "Consectetur adipiscing elit integer placerat scelerisque leo ac tincidunt ex feugiat vel.",
-        "category": "Category",
-        "image": {
-          "data": {
-            "attributes": {
-              "name": "image",
-              "path": "/images/theme",
-              "ext": "png",
-              "url": "/images/theme/image.png",
-              "width": 1280,
-              "height": 768
-            }
-          }
-        },
-        "date": "2023-06-03",
-        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
-        "tags": ["tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"],
-        "status": "published"
-      }
+      "slug": "lorem-ipsum-dolor-sit-amet",
+      "heading": "Lorem ipsum dolor sit amet",
+      "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+      "content": "# Heading 1\n# Heading 2\nParagraph",
+      "blurb": "Consectetur adipiscing elit integer placerat scelerisque leo ac tincidunt ex feugiat vel.",
+      "category": "Category",
+      "image": {
+        "name": "image",
+        "path": "/images/theme",
+        "ext": "png",
+        "url": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "date": "2023-06-03",
+      "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+      "tags": ["tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"],
+      "status": "published"
     }
   ]
 }

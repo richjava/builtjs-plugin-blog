@@ -11,7 +11,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths:
       allItems.items.map(
-        ({ attributes }: any) => `/blog-items/${attributes.slug}`
+        (item:any) => `/blog-items/${item.slug}`
       ) ?? [],
     fallback: true,
   };

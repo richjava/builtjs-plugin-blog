@@ -40,16 +40,12 @@
         "pageTitle": "Blog | Corporate Tailwind Built.JS Theme",
         "description": "Blog page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "data": {
-            "attributes": {
               "name": "image",
               "path": "/images/theme",
               "ext": "png",
               "url": "/images/theme/image.png",
               "width": 1280,
               "height": 768
-            }
-          }
         },
         "twitterCardType": "summary",
         "twitterUsername": ""

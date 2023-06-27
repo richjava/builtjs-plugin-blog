@@ -1,8 +1,12 @@
 import { format } from "date-fns";
 import Image from "next/image";
-import getConfig from "next/config";
 import Link from "next/link";
 import { Tag } from "@/components/plugins/richjava-blog/elements";
+import { 
+  urlForImage, 
+  widthForImage, 
+  heightForImage
+ } from "@/lib/images";
 
 const getHTML = (content: any) => {
   return {
@@ -13,10 +17,9 @@ const getHTML = (content: any) => {
 export default function Article1({ content }: any) {
   if (!content) return <></>;
   let { item = null } = { ...content };
-  const { publicRuntimeConfig } = getConfig();
   let author = null;
-  if (item.attributes.author) {
-    author = item.attributes.author.data.attributes;
+  if (item.author) {
+    author = item.author;
   }
   return (
     <article id="article-1" className="template">
@@ -25,25 +28,23 @@ export default function Article1({ content }: any) {
           <header className="max-w-4xl mx-auto">
             <div className="flex items-center mb-4">
               <p className="mb-0 text-sm capitalize preheading">
-                {format(new Date(item.attributes.date), "dd LLLL yyyy")}
+                {format(new Date(item.date), "dd LLLL yyyy")}
               </p>
               <span className="mx-3 text-gray-400">|</span>
               <Link className="no-underline hover:underline" href="/">
-                <p className="mb-0 text-sm">{item.attributes.category}</p>
+                <p className="mb-0 text-sm">{item.category}</p>
               </Link>
             </div>
-            <h1 className="mb-10">{item.attributes.title}</h1>
+            <h1 className="mb-10">{item.heading}</h1>
             {author && (
               <div className="flex items-center">
                 <div className="relative w-12 h-12 mr-4">
                   <Image
                     className="rounded-full"
-                    src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                      author?.profileImage?.data.attributes.url
-                    }`}
+                    src={urlForImage(author.profileImage)}
                     layout="fill"
                     objectFit="cover"
-                    alt=""
+                    alt={author.fullName}
                   />
                 </div>
                 <div>
@@ -59,27 +60,25 @@ export default function Article1({ content }: any) {
           </header>
           <div className="relative my-20">
             <Image
-              src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                item.attributes?.image?.data.attributes.url
-              }`}
-              width={item.attributes.image.data.attributes.width}
-              height={item.attributes.image.data.attributes.height}
+              src={urlForImage(author.profileImage)}
+              width={widthForImage(author.profileImage)}
+              height={heightForImage(author.profileImage)}
               layout="responsive"
-              alt=""
+              alt={author.fullName}
             />
           </div>
           <div
             className="max-w-2xl mx-auto"
-            dangerouslySetInnerHTML={getHTML(item.attributes.content)}
+            dangerouslySetInnerHTML={getHTML(item.content)}
           ></div>
           <div className="max-w-2xl mx-auto">
-            {item.attributes.tags && (
+            {item.tags && (
               <div className="grid grid-flow-col gap-2 mb-4 auto-cols-max">
-                {item.attributes.tags.data.map((tag: any) => {
+                {item.tags.map((tag: any) => {
                   return (
                     <Tag
-                      key={tag.attributes.name}
-                      attributes={tag.attributes}
+                      key={tag.name}
+                      attributes={tag}
                     ></Tag>
                   );
                 })}

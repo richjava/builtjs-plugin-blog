@@ -18,26 +18,6 @@
     "paths": {
       "@/*": ["./*"]
     }
-    // "paths": {
-    //   "@/styles/*": [
-    //     "styles/*"
-    //   ],
-    //   "@/plugin-components/*": [
-    //     "components/plugins/*"
-    //   ],
-    //   "@/demo/*": [
-    //     "demo/*"
-    //   ],
-    //   "@/layout/*": [
-    //     "components/layout/*"
-    //   ],
-    //   "@/data/*": [
-    //     "public/data/*"
-    //   ],
-    //   "@/api": [
-    //     "utils/api"
-    //   ]
-    // },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

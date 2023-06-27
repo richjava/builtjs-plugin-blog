@@ -5,7 +5,7 @@ export default function Seo({ content }:any) {
   let { attributes=null } = { ...content };
   const { publicRuntimeConfig } = getConfig();
   let shareImage = `${publicRuntimeConfig.BACKEND_URL || ""}${
-    attributes.shareImage.data.attributes.url
+    attributes.shareImage.url
   }`;
   return (
     <>

@@ -4,6 +4,11 @@ import Link from "next/link";
 import getConfig from "next/config";
 import { useRouter } from "next/router";
 import ModeToggleBtn from "../../../elements/mode-toggle-btn";
+import { 
+  urlForImage, 
+  widthForImage, 
+  heightForImage
+ } from "@/lib/images";
 
 export default function Header1({ content }: any) {
   const router = useRouter();
@@ -28,11 +33,9 @@ export default function Header1({ content }: any) {
               <span className="relative w-10">
                 <Image
                   className="text-gray-400 bg-white fill-current dark:bg-gray-800"
-                  src={`${publicRuntimeConfig.BACKEND_URL || ""}${
-                    global?.logo?.data.attributes.url
-                  }`}
-                  width={global?.logo?.data.attributes.width || "40px"}
-                  height={global?.logo?.data.attributes.height || "40px"}
+                  src={urlForImage(global.logo)}
+                  width={widthForImage(global.logo)}
+                  height={heightForImage(global.logo)}
                   layout="responsive"
                   alt="logo"
                 />
@@ -51,18 +54,18 @@ export default function Header1({ content }: any) {
                 menuItems.map((menuItem: any) => {
                   return (
                     <li
-                      key={menuItem.attributes.label}
+                      key={menuItem.label}
                       className={
-                        router.pathname == menuItem.attributes.url
+                        router.pathname == menuItem.url
                           ? "active"
                           : ""
                       }
                     >
                       <Link
                         className="flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-md dark:text-gray-300 hover:text-gray-900 hover:bg-gray-100 dark:hover:text-gray-800 md:w-auto"
-                        href={menuItem.attributes.url}
+                        href={menuItem.url}
                       >
-                        {menuItem.attributes.label}
+                        {menuItem.label}
                       </Link>
                     </li>
                   );

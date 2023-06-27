@@ -2,45 +2,33 @@
   "data": [
     {
       "id": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
-      "attributes": {
-        "slug": "barry-foo",
-        "fullName": "Barry Foo",
-        "bio": "Bio...",
-        "position": "Writer",
-        "profileImage": {
-          "data": {
-            "attributes": {
-              "name": "image",
-              "path": "/images/theme",
-              "ext": "png",
-              "url": "/images/theme/image.png",
-              "width": 48,
-              "height": 48
-            }
-          }
-        }
+      "slug": "barry-foo",
+      "fullName": "Barry Foo",
+      "bio": "Bio...",
+      "position": "Writer",
+      "profileImage": {
+        "name": "image",
+        "path": "/images/theme",
+        "ext": "png",
+        "url": "/images/theme/image.png",
+        "width": 48,
+        "height": 48
       },
       "status": "published"
     },
     {
       "id": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
-      "attributes": {
-        "slug": "jane-doe",
-        "fullName": "Jane Doe",
-        "bio": "Bio...",
-        "position": "Writer",
-        "profileImage": {
-          "data": {
-            "attributes": {
-              "name": "image",
-              "path": "/images/theme",
-              "ext": "png",
-              "url": "/images/theme/image.png",
-              "width": 48,
-              "height": 48
-            }
-          }
-        }
+      "slug": "jane-doe",
+      "fullName": "Jane Doe",
+      "bio": "Bio...",
+      "position": "Writer",
+      "profileImage": {
+        "name": "image",
+        "path": "/images/theme",
+        "ext": "png",
+        "url": "/images/theme/image.png",
+        "width": 48,
+        "height": 48
       },
       "status": "published"
     }

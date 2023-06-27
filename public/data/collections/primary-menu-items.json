@@ -1,11 +1,9 @@
 {
   "data": [
     {
-      "attributes": {
-        "slug": "blog",
-        "label": "Blog",
-        "url": "/blog"
-      }
+      "slug": "blog",
+      "label": "Blog",
+      "url": "/blog"
     }
   ]
 }

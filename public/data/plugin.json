@@ -19,7 +19,7 @@
         "slug": "tailwind"
       }
     ],
-    "deps": {
+    "config": {
       "frontend": {
         "project": {
           "main": {

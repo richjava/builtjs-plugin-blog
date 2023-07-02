@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
-import { 
-  urlForImage, 
- } from "@/lib/images";
+import { urlForImage } from "@/lib/images";
 import { Tag } from "@/components/plugins/richjava-blog/elements";
 
 export default function List1({ content }: any) {
@@ -20,29 +18,26 @@ export default function List1({ content }: any) {
       <div className="max-w-screen-xl mx-auto">
         {heroPost && (
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-5">
-            <div className="h-full col-span-3 lg:order-last">
-              <Link href={url}>
-                <div className="relative transition-opacity rounded-lg h-96 lg:h-full hover:opacity-80">
-                  <Image
-                    className="bg-gray-100 rounded-lg"
-                    src={urlForImage(heroPost.image)}
-                    layout="fill"
-                    objectFit="cover"
-                    alt={heroPost.heading}
-                  />
-                </div>
-              </Link>
-            </div>
+            {heroPost.image && (
+              <div className="h-full col-span-3 lg:order-last">
+                <Link href={url}>
+                  <div className="relative transition-opacity rounded-lg h-96 lg:h-full hover:opacity-80">
+                    <Image
+                      className="bg-gray-100 rounded-lg"
+                      src={urlForImage(heroPost.image)}
+                      layout="fill"
+                      objectFit="cover"
+                      alt={heroPost.heading}
+                    />
+                  </div>
+                </Link>
+              </div>
+            )}
             <div className="col-span-2 lg:py-20">
               {heroPost.tags && (
                 <div className="grid grid-flow-col gap-2 mb-4 auto-cols-max">
                   {heroPost.tags.map((tag: any) => {
-                    return (
-                      <Tag
-                        key={tag.aname}
-                        attributes={tag}
-                      ></Tag>
-                    );
+                    return <Tag key={tag.aname} attributes={tag}></Tag>;
                   })}
                 </div>
               )}
